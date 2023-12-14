@@ -1,0 +1,161 @@
+<!--
+    Name: Pierina Brito
+    book.html
+    10/2023
+-->
+
+
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+      <title> Wlashesandbeaty: Home </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="/style/book.css">
+        <link rel="stylesheet" href="/style/bookServ.css">
+        <script src="/script/script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link rel="shortcut icon" href="/assets/favicon-eyelashes.png">
+        <link rel="preload" as="image" href="/assets/brand.JPG" >
+        <script src="https://kit.fontawesome.com/94cd49c58c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="/font/flaticon_mycollection.css">
+    </head>
+    <body>
+        <header class="row">
+            <a href="index.html" class="logo"><img src="/assets/LOGO W.png" alt=""></a>
+            <button class="toggleMenu" onclick="toggleMenu();"></button>
+        </header>
+        <nav class="navigation row">
+            <ul class="row">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="book.html" class="page-btn">Book</a>
+        </nav>
+
+
+              <main>
+                <article>
+                    <section class="row" id="book" aria-label="book">
+                        <div class="card">
+
+                            <div class="book-card">
+
+                                <figure class="card-banner img-holder" style="--width: 250; --height:500;">
+                                    <img src="/assets/AdobeStock_book.jpeg" width="250" height="774" loading="lazy" alt="" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h2 class="h2 section-title">Make an Appointment</h2>
+
+                                    <p class="section-text">
+                                        Let the stress of the day melt away as our experienced therapists guide you through a journey of relaxation and renewal.
+                                    </p>
+
+                                    <form action="" class="book-form">
+                                        <div class="input-box">
+                                            <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
+                                            <input type="email" name="email-address" placeholder="Email Address" required class="input-field">
+                                        </div>
+
+                                        <div class="input-box">
+                                            <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
+
+                                            <select name="category" class="input-field">
+
+                                                <option value="Select Service">Select Service</option>
+                                                <option value="Lash Extention">Lash Extention</option>
+                                                <option value="Manicure">Manicure</option>
+                                                <option value="Pedicure">Pedicure</option>
+                                                <option value="Microblading">Microblading</option>
+                                                <option value="Teeth-Whitening">Teeth-Whitening</option>
+                                                <option value="Waxing">Waxing</option>
+                                            </select>
+                                        </div>
+
+                                        <input type="date" name="date" required class="input-field date">
+
+                                        <div class="textarea-field field">
+                                            <textarea name="message" placeholder="Write Message" required class="input-field"></textarea>
+                                        </div>
+                                        <button type="submit" class="page-btn active has-before">
+                                            <span class="span">Book Now</span>
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <!-- <figure class="card-banner img-holder" style="--width: 250; --height:774;">
+                                    <img src="/assets/AdobeStock_book1.jpeg" width="250" height="774" loading="lazy" alt="" class="img-cover">
+                                </figure> -->
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <section class="subscribe">
+                    <h4>Unveiling Your Beauty:</h4>
+                    <h2>Subscribe For Exclusive Services and Special Offers!</h2>
+                    <form action="" class="row">
+                      <input type="email" name="" id="" placeholder="Example@email.com">
+                      <button type="submit" class="page-btn active">Subscribe</button>
+                    </form>
+                </section>
+
+            </main><hr>
+
+            <div class="footer">
+                <div class="footer-content">
+                  <div class="footer-section links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                      <a href="services.html"><li>Services </li></a>
+                      <a href="gallery.html"><li>Gallery</li></a>
+                      <a href="contact.html"><li>Contact</li></a> 
+                      <a href="book.html"><li>Book</li></a>
+                      <a href="about.html"><li>About Us</li></a>
+                    </ul>
+                  </div>
+        
+                  <div class="footer-section schedule">
+                    <h4><i class="flaticon-calendar"></i> Opening Hours </h4>
+                    <ul>
+                      <li>Monday 9am - 6pm</li>
+                      <li>Tuesday 9am - 6pm</li>
+                      <li>Wednesday 9am - 6pm</li>
+                      <li>Thursday 9am - 6pm</li>
+                      <li>Friday 9am - 6pm</li>
+                      <li>Saturday 9am - 5pm</li>
+                    </ul>
+                  </div>
+        
+                  <div class="footer-section contact">
+                    <h4> Contact Us</h4>
+                    <ul>
+                      <li><i class="flaticon-email" aria-hidden="true"></i> <a href = "mailto:wlashesandbeauty@studio.com"> wlashesandbeauty@studio.com </a></li><br>
+                      <li><i class="flaticon-pin" aria-hidden="true"></i> <a href= ""> 1435 Brickell Av, Miami, FL 33131 </a></li><br>
+                      <li> <i class="flaticon-phone-call" aria-hidden="true"></i> <a href=""> 305-555-5555 </a></li><br>
+                    </ul>
+                  </div>
+        
+                  <div class="footer-section follow">
+                    <h4> Follow Us</h4>
+                        <a href ="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href ="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href ="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a><br/>
+                    <p class="studio"> WLashesandBeauty </p>
+                  </div>
+                
+        
+                <div class="footer-bottom">
+                  &copy; 2023  All Rights Reserved |  Designed by Pierina Brito
+                </div>
+              </div>
+
+    </body>
+</html>

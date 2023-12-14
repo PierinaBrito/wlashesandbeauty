@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script:wght@500&family=Montserrat:ital,wght@0,600;0,800;1,500&family=Outfit:wght@300;400;500;700&family=Permanent+Marker&family=Shadows+Into+Light+Two&family=Titillium+Web&display=swap');
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: var(--cl--2--);
+}
+
+
+body {
+  --cl--1--: #262621;
+  --cl--2--: #f2e2c2;
+  --cl--3--: #bf3f57;
+  background: var(--cl--1--);
+  max-width: 1300px;
+  margin: 0px auto;
+  flex-flow: row wrap;
+}
+
+
+header {
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 150px;
+}
+
+
+/* form .input-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-box  .input-field {
+    width: 48.5%;
+  }
+  
+  .field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid rgb(221, 189, 10);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgb(221, 189, 10);
+    margin: 12px 0;
+  }
+  
+  .field .item::placeholder {
+    color: rgb(146, 125, 8);
+  }
+  
+  .field .error-txt {
+    font-size: 14.5px;
+    color: rgb(241, 7, 7);
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+  }
+  
+  form .textarea-field .item {
+    resize: none;
+  }
+  */
+
+
+  form button {
+    padding: 12px 32px;
+    background: rgb(221, 189, 10);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(221, 189, 10);
+    font-size: 16px;
+    color: rgb(73, 63, 7);
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: .5s;
+  }
+  
+form button:hover {
+    box-shadow: none;
+}
+   
+
+.book { 
+
+	margin: 0 auto;
+  padding: 2rem 0; }
+
+.book-card .card-banner { display: none; }
+
+.book-card .card-content {
+    background: rgb(73, 72, 70);
+    padding: 80px 60px;
+    text-align: center;
+    color: rgb(221, 189, 10);
+}
+
+.book-card .section-title { 
+    color: rgb(221, 189, 10);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.book-card .section-text { 
+  margin-block: 15px 55px; 
+}
+
+.input-field {
+    width: 400px;
+    background: white;
+    color: rgb(73, 72, 70);
+    min-height: 60px;
+    padding-inline: 35px;
+    border-radius: 5px;
+    margin-block-end: 20px;
+    outline: none;
+    outline-offset: 0;
+}
+
+.input-field:focus { outline: 3px solid rgb(221, 189, 10); }
+
+select.input-field { appearance: none; }
+
+select.input-field, .input-field::placeholder { 
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(136, 135, 131);
+    font-weight: bold;
+}
+
+.input-field > option {
+    color: rgb(136, 135, 131);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.input-field.date {
+    color: rgb(136, 135, 131);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.input-field.date { text-transform: uppercase; }
+
+.input-field.date::-webkit-calendar-picker-indicator { opacity: 0.85; }
+
+textarea.input-field {
+    padding-block: 15px;
+    min-height: 100px;
+    height: 120px;
+    max-height: 150px;
+    resize: none;
+}
+
+.form-btn {
+    color: rgb(211, 174, 28);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(211, 174, 28);
+    padding: 13px;
+    border-radius: 5px;
+    transition: .1s;
+}
+
+.form-btn:is(:hover, :focus) {
+    background: var(--cl--1--)
+ 
+}
+
+
+
+
+
+/* Media query for tablet layout */ 
+
+@media only screen and (min-width: 500px) {
+
+	.input-field {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+
+	.btn {
+		grid-column: 1 / span 2;
+			padding: 3%;
+	}
+    
+}
+
+
+
+
+
+@media (min-width: 768px ) {
+    .service .grid-list { 
+      grid-template-columns: 1fr 1fr; 
+    }
+
+
+    .container { max-width: 720px; }
+
+    .section-text {
+      max-width: 50ch;
+      margin-inline: auto;
+    }
+
+    .book-card .card-banner { display: block; }
+
+    .book-card { display: flex;}
+  }
+
